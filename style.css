@@ -1,0 +1,64 @@
+body {
+    font-family: monospace;
+    word-wrap: break-word;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#top {
+    display: inline;
+}
+
+#prompt {
+    float: left;
+    font-family: monospace;
+    font-size: 50px;
+}
+
+#countdown_timer {
+    float: right;
+    font-size: 30px;
+}
+
+#input {
+    clear: both;
+    display: block;
+    background-size: cover;
+    height: 30px;
+    width: 100%;
+    position: relative;
+}
+
+input {
+  border: none;
+  position: absolute;
+  display: block;
+  outline: none;
+  height: 30px;
+  font-size: 30px;
+  margin: 0 auto;
+  padding: 10px;
+  color: #333;
+  left: 37%;
+  text-align: center;
+}
+
+.level {
+    border: black;
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 10px;
+    word-wrap: break-word;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.phrase {
+    font-size: 30px;
+    display: inline;
+}
