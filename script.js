@@ -92,6 +92,7 @@ function move_phrase() {
         curr_width += phrase.length;
     };
     level_element = document.getElementById('level_' + level);
+    var input_element = document.getElementById('input');
     input_element.removeChild(text_input_element);
     // var left = text_input_element.style.left;
     var phrase_div = document.createElement('span');
@@ -121,6 +122,5 @@ var downloadTimer = setInterval(function() {
     if (timeleft <= 0) {
         end();
         clearInterval(downloadTimer);
-        $(input_element).hide();
     }
 }, 1000);
