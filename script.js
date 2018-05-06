@@ -58,7 +58,7 @@ function get_phrase() {
     text_input_element.setAttribute('type', 'text');
     text_input_element.setAttribute('autofocus', true);
     text_input_element.setAttribute('id', 'text_input');
-    text_input_element.setAttribute('onkeydown', 'search(this)');
+    text_input_element.setAttribute('onkeydown', 'search(event)');
     color = colors[Math.floor(Math.random()*colors.length)];
     if (previous_color != undefined) {
         while (color == previous_color) {
@@ -69,10 +69,12 @@ function get_phrase() {
     text_input_element.style.color = color;
     // text_input_element.style.left = positions[Math.floor(Math.random()*positions.length)] + 'px';
     input_element.appendChild(text_input_element);
+    $('#text_input').focus();
 };
 
-function search() {
-    if (event.key === 'Enter') {
+function search(event) {
+    console.log(event.key);
+    if (event.keyCode === 13) {
         move_phrase();
         // get_position();
         get_phrase();
